@@ -14,7 +14,7 @@ from remglk import InputToGame
 STORYFILES_DIR = "./storyfiles"
 DEFAULT_GAME_FILENAME = f"{STORYFILES_DIR}/curses.z5"
 
-bocfel_path_from_env = os.getenv("BOCFEL_PATH") or "/Users/atroche/.local/bin/bocfel-json-autosave"
+bocfel_path_from_env = os.getenv("BOCFEL_PATH") or "./bocfel-json-autosave"
 ZMACHINE_INTERPRETER_BINARY_PATH = Path(bocfel_path_from_env)
 ZMACHINE_INTERPRETER_BINARY_PATH_WITHOUT_AUTOSAVE = Path(
     bocfel_path_from_env.replace("-autosave", "")
